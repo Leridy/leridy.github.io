@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="228e7e41-3647-4d19-b910-1b746a4b1e6b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/source/assets/images/about/blog_background.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaffolds/page.md" beforeDir="false" afterPath="$PROJECT_DIR$/scaffolds/page.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaffolds/post.md" beforeDir="false" afterPath="$PROJECT_DIR$/scaffolds/post.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/hello.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/hello.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/about/img/blog_background.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/about/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/about/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hexo-casper/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-casper/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/it-is-necessary-to-write-something.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/it-is-necessary-to-write-something.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hexo-casper/source/img/blog_background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/source/assets/images/blog_background.jpg" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,11 +18,11 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/about/index.md">
+        <entry file="file://$PROJECT_DIR$/source/_posts/it-is-necessary-to-write-something.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="312">
-                <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+              <first_editor relative-caret-position="277">
+                <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
               </first_editor>
               <second_editor />
             </state>
@@ -45,6 +40,8 @@
       <find>categories</find>
       <find>site-header outer</find>
       <find>关于我</find>
+      <find>site-header-content</find>
+      <find>比较可惜</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -55,10 +52,7 @@
       <list>
         <option value="$PROJECT_DIR$/themes/hexo-casper/layout/_partials/footer.swig" />
         <option value="$PROJECT_DIR$/_config.yml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/themes/hexo-casper/_config.yml" />
         <option value="$PROJECT_DIR$/source/categories/index.md" />
-        <option value="$PROJECT_DIR$/source/_posts/it-is-necessary-to-write-something.md" />
         <option value="$PROJECT_DIR$/scaffolds/post.md" />
         <option value="$PROJECT_DIR$/scaffolds/page.md" />
         <option value="$PROJECT_DIR$/source/_posts/hello.md" />
@@ -66,6 +60,9 @@
         <option value="$PROJECT_DIR$/source/asset/index.md" />
         <option value="$PROJECT_DIR$/themes/hexo-casper/layout/_partials/header.swig" />
         <option value="$PROJECT_DIR$/source/about/index.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/themes/hexo-casper/_config.yml" />
+        <option value="$PROJECT_DIR$/source/_posts/it-is-necessary-to-write-something.md" />
       </list>
     </option>
   </component>
@@ -85,6 +82,11 @@
             <path>
               <item name="hexo" type="b2602c69:ProjectViewProjectNode" />
               <item name="hexo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hexo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hexo" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hexo" type="b2602c69:ProjectViewProjectNode" />
@@ -145,24 +147,14 @@
               <item name="hexo" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="hexo-casper" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hexo" type="b2602c69:ProjectViewProjectNode" />
               <item name="hexo" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="hexo-casper" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-              <item name="_partials" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hexo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hexo" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="hexo-casper" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-              <item name="_partials" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -181,6 +173,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source/assets/images" />
       <recent name="$PROJECT_DIR$/source/asset/images/about" />
       <recent name="$PROJECT_DIR$/source/about/img" />
     </key>
@@ -212,12 +205,12 @@
       <updated>1557687804619</updated>
       <workItem from="1557687806424" duration="1174000" />
       <workItem from="1557720876286" duration="59000" />
-      <workItem from="1557840966537" duration="7606000" />
+      <workItem from="1557840966537" duration="8678000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8839000" />
+    <option name="totallyTimeSpent" value="9911000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -228,7 +221,7 @@
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32962963" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32962963" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -239,7 +232,7 @@
       <window_info anchor="bottom" id="Pomodoro" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Readhub" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32407406" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32962963" />
+      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.32962963" />
       <window_info anchor="bottom" id="Quokka" order="13" weight="0.32962963" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -253,16 +246,7 @@
     <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/index.swig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/tag.swig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/post.swig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/_partials/public/social.swig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/_partials/public/toc.swig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/_partials/widget.swig">
@@ -274,26 +258,13 @@
     <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/_partials/page.swig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/_partials/javascript.swig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/_partials/index.swig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/_partials/head.swig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/_partials/footer.swig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -310,13 +281,6 @@
         <state split_layout="SPLIT">
           <first_editor />
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/category.swig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -418,16 +382,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/it-is-necessary-to-write-something.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="384">
-            <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/assets/images/about/blog_background.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -438,13 +392,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hexo-casper/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -461,34 +408,98 @@
     <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/_layout.swig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/_partials/public/fload-header.swig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/_partials/public/nav.swig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/_partials/about.swig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/_partials/post.swig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/_partials/header.swig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="195" selection-start-line="3" selection-start-column="195" selection-end-line="3" selection-end-column="195" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/about/index.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="312">
-            <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <first_editor relative-caret-position="552">
+            <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/tag.swig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hexo-casper/source/js/sw-test.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/_partials/public/fload-header.swig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/_partials/public/nav.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/_partials/public/social.swig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/_partials/public/toc.swig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/_partials/widget/category.swig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/category.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/_partials/javascript.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1504" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/_partials/head.swig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hexo-casper/layout/_partials/header.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/images/blog_background.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hexo-casper/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/searchData.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="194" selection-start-column="194" selection-end-column="194" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/it-is-necessary-to-write-something.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="277">
+            <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
           </first_editor>
           <second_editor />
         </state>
