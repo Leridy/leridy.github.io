@@ -115,6 +115,7 @@
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(bp, s);
     })();
-    console.log("this theme is from https://github.com/xzhih/hexo-theme-casper")
+    console.log(`Welcome to LERIDY'S BLOG`)
+    console.log("theme power by xzhih @ https://github.com/xzhih/hexo-theme-casper")
 </script>
 {% endif %}
