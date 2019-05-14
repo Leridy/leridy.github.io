@@ -1,0 +1,39 @@
+---
+title: 总有写点什么的必要
+
+date: 2019-05-14 21:50:10
+
+tags: 说话
+
+cover_img: https://images.unsplash.com/photo-1557801200-9a8d901ded2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1974&q=80
+
+feature_img: https://images.unsplash.com/photo-1557801200-9a8d901ded2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1974&q=80
+
+description: 新博客的第二篇博文
+
+keywords: 写点什么
+
+categories: 
+- WEB
+---
+
+## 总有写点什么的必要
+
+```
+ 我正有写一点东西的必要了 —— 鲁迅
+```
+
+5月14日，杭州，🌧。
+
+去年（2018）九月，我的博客被恶意删库。18年早些时候的一些文章由于没有开启数据库备份，
+理所当然的丢失。比较可惜的是，刚来杭州的一些面试经验总结和几篇技术博客都完全无法追回。
+
+也就是自那以后，我的博客断更。我也懒得去研究 WordPress 。所以也没有恢复网站的运行。
+
+古语有云好记性不如烂笔头，在日常开发中，常常会碰到一些小问题。记下来，不仅可以作为自己的
+知识库、也可以用于技术的分享。技术的成长也在于一点一点的累积。
+
+总有写点什么的必要。
+
+
+

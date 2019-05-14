@@ -1,19 +1,24 @@
 ---
-title: LEIRDY
+title: 关于我
 
 date: 2019-05-13 02:37:12
 
-tags: 关于我们
-
-cover_img: https://images.unsplash.com/photo-1520361633379-b84324c5b73d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
-
-feature_img: https://images.unsplash.com/photo-1520361633379-b84324c5b73d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
+tags: 关于我
 
 description: 关于我
 
 keywords: 关于
 
+header_image: /assets/images/about/blog_background.png
+
+style: "-webkit-backdrop-filter: blur(30px);"
+
 ---
 
-关于我
-	开发
+现居杭州的前端开发工程师。 
+
+这个博客主要用于记录自己的技术成长、生活小计、和一年一度的年度计划的发布。
+
+暂时就只想到了这么多。。。有什么以后再研究吧。
+
+[Github](https://github.com/leridy)

@@ -11,8 +11,10 @@ keywords: leridy, blog, leridy's blog
 
 # Menu
 menu:
-  ABOUT: /about
-  ARCHIVE: /archives
+  Home: /
+  WEB: /categories/WEB
+  Archive: /archives
+  About: /about
   # you can add here
 
 # author
@@ -34,7 +36,8 @@ social:
 
 # Footer Links
 footer:
-   百度: https://www.baidu.com
+  阮一峰的网络日志: http://www.ruanyifeng.com/blog/
+  廖雪峰的博客: https://www.liaoxuefeng.com/
 
 # Widget
 widgets:

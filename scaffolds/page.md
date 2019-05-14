@@ -6,6 +6,8 @@ date: {{ date }}
 
 tags:
 
+categories:
+
 cover_img:
 
 feature_img:
