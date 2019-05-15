@@ -417,3 +417,23 @@ img {
 		margin-left: 0
 	}
 }
+
+/* customize css */
+
+/*color*/
+
+.c-danger {
+	color: #F56C6C
+}
+
+.c-success {
+	color: #67C23A;
+}
+
+.c-warning {
+	color: #E6A23C;
+}
+
+.c-info {
+	color: #909399;
+}

@@ -9,9 +9,10 @@
 			&copy; {{ date(Date.now(), 'YYYY') }}
 		</section>
 		<nav class="site-footer-nav">
-			{% for key,link in theme.footer %}
-            <a href="{{ link }}" title="{{ key }}" target="_blank" rel="noopener">{{ key }}</a>
-            {% endfor %}
+           <p>友情链接</p>
+           {% for key,link in theme.footer %}
+           <a href="{{ link }}" title="{{ key }}" target="_blank" rel="noopener">{{ key }}</a>
+           {% endfor %}
         </nav>
     </div>
 </footer>
