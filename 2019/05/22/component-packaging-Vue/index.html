@@ -17,16 +17,16 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>Category: WEB | LEIRDY'S BLOG</title>
+	<title>组件封装的简述 (Vue) | LEIRDY'S BLOG</title>
 
 	<meta name="HandheldFriendly" content="True">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 	<meta name="generator" content="hexo">
 	<meta name="author" content="Leridy Lei">
-	<meta name="description" content="leridy 的博客">
+	<meta name="description" content="这篇文章将从多个角度来表述我对 Vue 组件封装的看法和建议">
 
 	
-	<meta name="keywords" content="leridy, blog, leridy's blog">
+	<meta name="keywords" content="前端,web,vue,组件">
 	
 
 	
@@ -44,24 +44,26 @@
 	
 
 	<meta property="og:site_name" content="LEIRDY'S BLOG">
-	<meta property="og:type" content="blog">
-	<meta property="og:title" content="Category: WEB | LEIRDY'S BLOG">
-	<meta property="og:description" content="leridy 的博客">
-	<meta property="og:url" content="http://yoursite.com/categories/WEB/index.html">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="组件封装的简述 (Vue) | LEIRDY'S BLOG">
+	<meta property="og:description" content="这篇文章将从多个角度来表述我对 Vue 组件封装的看法和建议">
+	<meta property="og:url" content="http://yoursite.com/2019/05/22/component-packaging-Vue/">
 
 	
+	<meta property="article:published_time" content="2019-05-22T01:05:00+08:00"> 
+	<meta property="article:author" content="Leridy Lei">
+	<meta property="article:published_first" content="LEIRDY'S BLOG, /2019/05/22/component-packaging-Vue/">
+	
 </head>
-<body class="tag-template">
+<body class="post-template">
 	<div class="site-wrapper">
-		 
+		
 
 
 
 
-<header class="site-header outer " style="background-image: url(/assets/images/blog_background.jpg); ">
+<header class="site-header outer" style="z-index: 999">
     <div class="inner">
-        
-        
         
 <nav class="site-nav"> 
     <div class="site-nav-left">
@@ -121,254 +123,91 @@
 </div>
     </div>
 </nav>
-        
-        <div class="site-header-content">
-            
-            <h1 class="site-title">
-                Category: WEB
-            </h1>
-            <h2 class="site-description">分类</h2>
-        </div>
-        
-        
     </div>
 </header>
 
 
 <main id="site-main" class="site-main outer" role="main">
-	<div class="inner">
-		<div class="post-feed">
-			
-			<article class="post-card post ">
-				
-				<a class="post-card-image-link" title="组件封装的简述 (Vue)" href="/2019/05/22/component-packaging-Vue/">
-					<div class="post-card-image b-lazy" data-src="/assets/images/posts/2019/5/21/component-packaging-Vue.jpeg"></div>
-				</a>
-				
-				<div class="post-card-content">
-					<a class="post-card-content-link" title="组件封装的简述 (Vue)" href="/2019/05/22/component-packaging-Vue/">
-						<header class="post-card-header">
-							<span class="post-card-tags">
-								
-								
-								WEB
-								| 
-								
-								<time datetime="2019-05-21T17:38:35.000Z" itemprop="datePublished">
-									2019-05-22
-								</time>
-							</span>
-							<h2 class="post-card-title">组件封装的简述 (Vue)</h2>
-						</header>
-						<section class="post-card-excerpt">
-							<p>
-								
-								
-								
-								
-这篇文章用来填我之前一片的文章优雅的自定制弹窗（Vue）的坑
+    <div class="inner">
+        <header class="post-full-header">
+            <section class="post-full-meta">
+                <time class="post-full-meta-date" datetime="2019-05-21T17:38:35.000Z" itemprop="datePublished">
+                    2019-05-22
+                </time>
+                
+                <span class="date-divider">/</span>
+                
+                <a href="/categories/WEB/">WEB</a>&nbsp;&nbsp;
+                
+                
+            </section>
+            <h1 class="post-full-title">组件封装的简述 (Vue)</h1>
+        </header>
+        <article class="post-full no-image">
+            
+            <section class="post-full-content">
+                <div id="lightgallery" class="markdown-body">
+                    <blockquote>
+<p>这篇文章用来填我之前一片的文章<a href="/2019/05/16/vue-custom-dialog-in-elegant-way/">优雅的自定制弹窗（Vue）</a>的坑</p>
+</blockquote>
+<p>我将基于自己的开发经历，从以下几个角度来距离分析一个组件的封装流程。</p>
+<ol>
+<li>前期准备：<ol>
+<li>组件封装的必要性分析</li>
+<li>组件核心功能以及数据流向的分析</li>
+<li>依据数据流向确定组件的挂载形式</li>
+</ol>
+</li>
+<li>代码片段<ol>
+<li>踩坑心得</li>
+</ol>
+</li>
+<li>各个封装方式的优缺点分析</li>
+</ol>
+<h5 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h5><p><img alt="to be continued" class="post-img b-lazy" href="https://m.media-amazon.com/images/I/71NscnhYRCL._SS500_.jpg" data-src="https://m.media-amazon.com/images/I/71NscnhYRCL._SS500_.jpg"></p>
 
-我将基于自己的开发经历，从以下几个角度来距离分析一个组件的封装流程。
+                </div>
+            </section>
+        </article>
+    </div>
 
-前期准备：
-组件封装的必要性分析
-组件核心功能以及数据流向的分
-								...
-							</p>
-						</section>
-					</a>
-					<footer class="post-card-meta">
-						<div class="author-list">
-							<div class="author-list-item">
-								<div class="author-name-tooltip">Leridy Lei</div>
-								
-								<a href="/about" class="static-avatar">
-									<img class="author-profile-image" src="https://avatars0.githubusercontent.com/u/12772584?s=460&v=4" alt="Leridy Lei">
-								</a>
-								
-							</div>
-						</div>
-						<span class="reading-time">
-							0
-							min read
-						</span>
-					</footer>
-				</div>
-			</article>
-			
-			<article class="post-card post ">
-				
-				<a class="post-card-image-link" title="Typescript与react的开发心得" href="/2019/05/22/Typescript-react-development-practices/">
-					<div class="post-card-image b-lazy" data-src="/assets/images/posts/2019/5/21/Typescript-react-development-practices.jpeg"></div>
-				</a>
-				
-				<div class="post-card-content">
-					<a class="post-card-content-link" title="Typescript与react的开发心得" href="/2019/05/22/Typescript-react-development-practices/">
-						<header class="post-card-header">
-							<span class="post-card-tags">
-								
-								
-								WEB
-								| 
-								
-								<time datetime="2019-05-21T17:08:03.000Z" itemprop="datePublished">
-									2019-05-22
-								</time>
-							</span>
-							<h2 class="post-card-title">Typescript与react的开发心得</h2>
-						</header>
-						<section class="post-card-excerpt">
-							<p>
-								
-								
-								
-								
-上周，分配到了 Typescript react 项目的开发任务。我又有机会学习新的东西啦。
+    
+    <div style="height: 4vw;width: 100%"></div>
+    <nav id="gobottom" class="pagination">
+        
+        <span class="prev-next-post">•</span>
+        
+        <a class="next-post" title="Typescript与react的开发心得" href="/2019/05/22/Typescript-react-development-practices/">
+            Typescript与react的开发心得 →
+        </a>
+        
+    </nav>
 
-我将从一下几个方面来讲这次开发的心路历程，以及自己的一些观点
-
-开发前
-对 react 的观点
-关于 
-								...
-							</p>
-						</section>
-					</a>
-					<footer class="post-card-meta">
-						<div class="author-list">
-							<div class="author-list-item">
-								<div class="author-name-tooltip">Leridy Lei</div>
-								
-								<a href="/about" class="static-avatar">
-									<img class="author-profile-image" src="https://avatars0.githubusercontent.com/u/12772584?s=460&v=4" alt="Leridy Lei">
-								</a>
-								
-							</div>
-						</div>
-						<span class="reading-time">
-							0
-							min read
-						</span>
-					</footer>
-				</div>
-			</article>
-			
-			<article class="post-card post ">
-				
-				<a class="post-card-image-link" title="优雅的自定制弹窗（Vue）" href="/2019/05/16/vue-custom-dialog-in-elegant-way/">
-					<div class="post-card-image b-lazy" data-src="/assets/images/posts/2019/5/15/vue-custom-dialog-in-elegant-way.jpeg"></div>
-				</a>
-				
-				<div class="post-card-content">
-					<a class="post-card-content-link" title="优雅的自定制弹窗（Vue）" href="/2019/05/16/vue-custom-dialog-in-elegant-way/">
-						<header class="post-card-header">
-							<span class="post-card-tags">
-								
-								
-								WEB
-								| 
-								
-								<time datetime="2019-05-15T17:59:45.000Z" itemprop="datePublished">
-									2019-05-16
-								</time>
-							</span>
-							<h2 class="post-card-title">优雅的自定制弹窗（Vue）</h2>
-						</header>
-						<section class="post-card-excerpt">
-							<p>
-								
-								
-								
-								
-在网页开发中，弹窗是一种高效人机交互方式。适度的弹窗可以将有效的信息快速的展示给用户，辅助用户减少决策或操作时间。一方面可以简化操作流程，提升效率。另一方面还能降低各个组件间的耦合度。恰当封装的弹窗
-								...
-							</p>
-						</section>
-					</a>
-					<footer class="post-card-meta">
-						<div class="author-list">
-							<div class="author-list-item">
-								<div class="author-name-tooltip">Leridy Lei</div>
-								
-								<a href="/about" class="static-avatar">
-									<img class="author-profile-image" src="https://avatars0.githubusercontent.com/u/12772584?s=460&v=4" alt="Leridy Lei">
-								</a>
-								
-							</div>
-						</div>
-						<span class="reading-time">
-							4
-							min read
-						</span>
-					</footer>
-				</div>
-			</article>
-			
-			<article class="post-card post ">
-				
-				<a class="post-card-image-link" title="总有写点什么的必要" href="/2019/05/14/it-is-necessary-to-write-something/">
-					<div class="post-card-image b-lazy" data-src="https://images.unsplash.com/photo-1557801200-9a8d901ded2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1974&q=80"></div>
-				</a>
-				
-				<div class="post-card-content">
-					<a class="post-card-content-link" title="总有写点什么的必要" href="/2019/05/14/it-is-necessary-to-write-something/">
-						<header class="post-card-header">
-							<span class="post-card-tags">
-								
-								
-								WEB
-								| 
-								
-								<time datetime="2019-05-14T13:50:10.000Z" itemprop="datePublished">
-									2019-05-14
-								</time>
-							</span>
-							<h2 class="post-card-title">总有写点什么的必要</h2>
-						</header>
-						<section class="post-card-excerpt">
-							<p>
-								
-								
-								
-								
-我正有写一点东西的必要了 —— 鲁迅
-
-5月14日，杭州，🌧。
-去年（2018）九月，我的博客被恶意删库。18年早些时候的一些文章由于没有开启数据库备份，理所当然的丢失。好可惜，刚来杭州的一些面试
-								...
-							</p>
-						</section>
-					</a>
-					<footer class="post-card-meta">
-						<div class="author-list">
-							<div class="author-list-item">
-								<div class="author-name-tooltip">Leridy Lei</div>
-								
-								<a href="/about" class="static-avatar">
-									<img class="author-profile-image" src="https://avatars0.githubusercontent.com/u/12772584?s=460&v=4" alt="Leridy Lei">
-								</a>
-								
-							</div>
-						</div>
-						<span class="reading-time">
-							1
-							min read
-						</span>
-					</footer>
-				</div>
-			</article>
-			
-		</div>
-	</div>
-
-	
-	
-	<nav class="pagination">
-		
-	</nav>
-	
-	
+    
+    <div class="inner">
+        <div id="comment"></div>
+    </div>
+    
 </main>
+
+<div class="toc-bar">
+    <div class="toc-btn-bar">
+        <a href="#site-main" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M793.024 710.272a32 32 0 1 0 45.952-44.544l-310.304-320a32 32 0 0 0-46.4 0.48l-297.696 320a32 32 0 0 0 46.848 43.584l274.752-295.328 286.848 295.808z"/></svg>
+        </a>
+        <div class="toc-btn toc-switch">
+            <svg class="toc-open" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M779.776 480h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M779.776 672h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M256 288a32 32 0 1 0 0 64 32 32 0 0 0 0-64M392.576 352h387.2a32 32 0 0 0 0-64h-387.2a32 32 0 0 0 0 64M256 480a32 32 0 1 0 0 64 32 32 0 0 0 0-64M256 672a32 32 0 1 0 0 64 32 32 0 0 0 0-64"/></svg>
+            <svg class="toc-close hide" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 960c-247.039484 0-448-200.960516-448-448S264.960516 64 512 64 960 264.960516 960 512 759.039484 960 512 960zM512 128.287273c-211.584464 0-383.712727 172.128262-383.712727 383.712727 0 211.551781 172.128262 383.712727 383.712727 383.712727 211.551781 0 383.712727-172.159226 383.712727-383.712727C895.712727 300.415536 723.551781 128.287273 512 128.287273z"/><path d="M557.05545 513.376159l138.367639-136.864185c12.576374-12.416396 12.672705-32.671738 0.25631-45.248112s-32.704421-12.672705-45.248112-0.25631l-138.560301 137.024163-136.447897-136.864185c-12.512727-12.512727-32.735385-12.576374-45.248112-0.063647-12.512727 12.480043-12.54369 32.735385-0.063647 45.248112l136.255235 136.671523-137.376804 135.904314c-12.576374 12.447359-12.672705 32.671738-0.25631 45.248112 6.271845 6.335493 14.496116 9.504099 22.751351 9.504099 8.12794 0 16.25588-3.103239 22.496761-9.247789l137.567746-136.064292 138.687596 139.136568c6.240882 6.271845 14.432469 9.407768 22.65674 9.407768 8.191587 0 16.352211-3.135923 22.591372-9.34412 12.512727-12.480043 12.54369-32.704421 0.063647-45.248112L557.05545 513.376159z"/></svg>
+        </div>
+        <a href="#gobottom" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M231.424 346.208a32 32 0 0 0-46.848 43.584l297.696 320a32 32 0 0 0 46.4 0.48l310.304-320a32 32 0 1 0-45.952-44.544l-286.848 295.808-274.752-295.36z"/></svg>
+        </a>
+    </div>
+    <div class="toc-main">
+        <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#未完待续"><span class="toc-text">未完待续</span></a></li></ol>
+    </div>
+</div>
+
 
 
 	</div>
@@ -517,11 +356,63 @@
 
 
 
-<script src="/js/mix/home-lazy-local.min.js"></script>
+
+
+<div class="floating-header">
+	<div class="floating-header-logo">
+        <a href="/" title="LEIRDY'S BLOG">
+			
+                <img src="https://avatars0.githubusercontent.com/u/12772584?s=460&v=4" alt="LEIRDY'S BLOG icon">
+			
+            <span>LEIRDY'S BLOG</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">组件封装的简述 (Vue)</div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+
+
+
+<script src="/js/mix/post-lazy-local.min.js"></script>
 
 <script>;(function() {var bLazy = new Blazy()})();</script>
 
 
+
+
+<script src="/js/lightgallery.min.js"></script>
+<link rel="stylesheet" href="/css/lightgallery.min.css">
+<script>
+    lightGallery(document.getElementById('lightgallery'), {
+        selector: '.post-img'
+    });
+</script>
+
+
+
+
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#comment' ,
+        verify: true,
+        notify: true,
+        appId: 'lvnoeuHDVPf5THjMMNbbsJF6-gzGzoHsz',
+        appKey: 'z8mWgVkPelz7FT80Xg3HFxw6',
+        placeholder: 'Shall we talk ?',
+        pageSize: 10,
+        avatar: 'robohash',
+        visitor: true,
+    });
+</script>
 
 
 
