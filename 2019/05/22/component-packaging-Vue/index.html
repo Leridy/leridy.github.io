@@ -164,7 +164,32 @@
 </li>
 <li>各个封装方式的优缺点分析</li>
 </ol>
-<h5 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h5><p><img alt="to be continued" class="post-img b-lazy" href="https://m.media-amazon.com/images/I/71NscnhYRCL._SS500_.jpg" data-src="https://m.media-amazon.com/images/I/71NscnhYRCL._SS500_.jpg"></p>
+<h3 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h3><h4 id="1-组件分装的必要性分析"><a href="#1-组件分装的必要性分析" class="headerlink" title="1. 组件分装的必要性分析"></a>1. 组件分装的必要性分析</h4><p>首先我们需要根据现实业务以及现实需求出发，依据组件封装的原则：降低耦合、提高代码复用，分析是否需要封装组件。这里了大概从我的开发实践中总结几个封装组件的情况：</p>
+<ol>
+<li>复杂业务中需要有一个功能复杂但与主业务只是单纯数据交互的情况（比如：富文本编辑器，根据实际业务实现的选择列表等。）这些功能往往有其独特的功能点，比如独立的数据（store 或 state 以及独立的网络操作）部分，处理的业务也较为复杂，同时与主业务之间的关系却较为简单，一般为简单的数据传输/信息获取/信息输入。</li>
+<li>较为高频的相同功能，如图书管理系统中的图书选择器，在多个图书管理场景都可以需要图书选择的功能。</li>
+<li>简化代码降低耦合方便维护，当一个业务的代码文件大于一定限制的时候维护工作将变得格外复杂，这样我们就需要分析业务中的各个代码是否可以优化，将较为复杂的内容拆分为一个个小的组件来维护。</li>
+</ol>
+<h4 id="2-组件核心功能以及数据流向的分析对组件进行分类（功能型-展示型）"><a href="#2-组件核心功能以及数据流向的分析对组件进行分类（功能型-展示型）" class="headerlink" title="2.组件核心功能以及数据流向的分析对组件进行分类（功能型/展示型）"></a>2.组件核心功能以及数据流向的分析对组件进行分类（功能型/展示型）</h4><p>根据实际的需求，我们能够明确我们在什么地方需要封装组件，封装一个什么样的组件。结合我的开发经历和对一些组件库的实现，我们大概能够从两个大方面来分类：</p>
+<ol>
+<li>功能型：主要是为了实现一个特定的交互功能（ElementUI 中大大部分组件如 input、selector、button 等）</li>
+<li>展示型：主要为了展示指定的内容，（ElementUI 中的 轮播图，table，message, 面包屑导航，tooltips, divider, image 等）</li>
+<li>依据数据流向确定组件的封装和挂载形式<ul>
+<li>单纯的数据流入且较为通用的组件,如 ElementUI 中的 message 组件，建议直接封装在通用组件库中通过在 Vue.component 方法来使用</li>
+<li>弹窗选择器等，轻度的数据交互。例如微信公众号后台中媒体库功能。这类使用范围较广且功能独立的组件，则建议封装成一个独立的 Vue 实例，独立于主项目挂载在页面中。通过挂载一个返回异步（Promise）对象的方法在主业务的 Vue 原型链中，来实现全局的调用和数据交互。 </li>
+<li>定制功能的组件，比如在线商城管理系统中，常见的商品属性配置功能的组件，建议在当前的商品编辑页面目录内建立一个组件文件夹存放此类组件。此类组件往往需要处理大量的传入信息，并返回大量的传出信息。封装此类组件往往是为了代码的维护成本考量。因此直接作为 component 引入直接在父组件（页面中使用即可）。</li>
+</ul>
+</li>
+</ol>
+<h3 id="代码片段"><a href="#代码片段" class="headerlink" title="代码片段"></a>代码片段</h3><p>虽然这篇文章鸽了很久，但是我没有代码的准备，我们能够通过阅读一些流行的组件库的源代码就能够看到大多数封装的方法。😁</p>
+<h3 id="各个封装方式的优缺点分析"><a href="#各个封装方式的优缺点分析" class="headerlink" title="各个封装方式的优缺点分析"></a>各个封装方式的优缺点分析</h3><p>上面我举了三种（严格来说是两种）封装和挂载形式的例子（我觉得抛开实际应用场景谈好坏有点耍流氓的意思）</p>
+<ol>
+<li><p>前两种封装方法的优点，通用性较强，方便全局的使用。缺点不适合做一些复杂的界面交互和复杂的数据交互</p>
+</li>
+<li><p>最后一种的优点，提高代码的可维护性。同样也提升原有功能的可以复用性，在需要相同功能时不用 copy paste 或者写冗余代码了，缺点是适用范围有限。</p>
+</li>
+</ol>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>代码的封装，最显而易见的好处就是提高代码的复用率从而达到提升开发效率。除了组件的封装，我们再开发中多封装一些通用方法（工具方法），多写一些 mixin 同样能够达到事半功倍的效果。</p>
 
                 </div>
             </section>
@@ -204,7 +229,7 @@
         </a>
     </div>
     <div class="toc-main">
-        <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#未完待续"><span class="toc-text">未完待续</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前期准备"><span class="toc-text">前期准备</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-组件分装的必要性分析"><span class="toc-text">1. 组件分装的必要性分析</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-组件核心功能以及数据流向的分析对组件进行分类（功能型-展示型）"><span class="toc-text">2.组件核心功能以及数据流向的分析对组件进行分类（功能型/展示型）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码片段"><span class="toc-text">代码片段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#各个封装方式的优缺点分析"><span class="toc-text">各个封装方式的优缺点分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结"><span class="toc-text">总结</span></a></li></ol>
     </div>
 </div>
 
