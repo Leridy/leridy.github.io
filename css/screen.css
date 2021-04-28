@@ -607,6 +607,7 @@ body {
 
 	width: auto;
 	height: 21px;
+	max-width: 21px;
 }
 
 .nav {
@@ -910,7 +911,7 @@ body {
 
 	-ms-flex-negative: 0;
 	flex-shrink: 0;;
-}			
+}
 .static-avatar {
 	width: 34px;
 	height: 34px;
